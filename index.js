@@ -39,7 +39,7 @@ app.use(methodOverride('_method'));
 
 app.get('/', (req, res) => {
   const title = 'About';
-  const style = 'styles/index.css'
+  const style = 'index.css'
   res.render(getPath('index'), { title, style })
 })
 
