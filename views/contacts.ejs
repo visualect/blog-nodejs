@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+  <body>
+    <%- include('./partials/nav.ejs')%>
+      <h1>Contacts</h1>
+      <ul>
+        <% if (contacts.length) {%>
+          <% contacts.forEach(contact=> { %>
+            <li>
+              <%= contact.name %>
+            </li>
+            <% })%>
+              <% }%>
+                <!-- <li>Twitter</li>
+      <li>Facebook</li>
+      <li>Youtube</li>
+      <li>Instagram</li> -->
+      </ul>
+  </body>
+
+</html>

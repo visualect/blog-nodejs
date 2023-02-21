@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid #a0a0a031;
+    background-color: rgba(0, 0, 0, 0.656);
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #C6C6C6
+}
+
+.form {
+    width: 100%;
+    padding: 24px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #a0a0a031;
+}
+
+.form__main {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    padding: 4px 18px;
+    background-color: transparent;
+    border: 1px solid #a0a0a031;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 1;
+    color: white;
+}
+
+.form__post-input {
+    padding: 10px 18px;
+    font-size: 16px;
+    min-height: 300px;
+    resize: none;
+}
+
+.form__title-wrapper,
+.form__author-wrapper {
+    width: 50%;
+}
+
+.form__label {
+    color: white;
+    margin-bottom: 6px;
+}
+
+.form__text-wrapper {
+    margin-bottom: 18px;
+}
+
+.form__btn-wrapper {
+    align-items: flex-end;
+}
+
+.form__btn {
+    background-color: transparent;
+    width: max-content;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #a0a0a031;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: white;
+    color: black;
+}
