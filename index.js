@@ -33,13 +33,13 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
 app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static('styles'));
 
 app.use(methodOverride('_method'));
 
 app.get('/', (req, res) => {
   const title = 'About';
-  const style = '/index.css'
+  const style = 'styles/index.css'
   res.render(getPath('index'), { title, style })
 })
 
