@@ -3,9 +3,9 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const chalk = require('chalk');
 const methodOverride = require('method-override')
-const postRoutes = require('./routes/post-routes.js')
-const postApiRoutes = require('./routes/api-post-routes.js');
-const contactRoutes = require('./routes/contact-routes.js')
+const postRoutes = require('./api/post-routes.js')
+const postApiRoutes = require('./api/api-post-routes.js');
+const contactRoutes = require('./api/contact-routes.js')
 const getPath = require('./helpers/get-path.js')
 require('dotenv').config();
 
